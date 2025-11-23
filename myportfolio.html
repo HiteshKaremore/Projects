@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitesh | Web Developer</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-900 text-slate-100">
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-20 bg-slate-900/90 backdrop-blur border-b border-slate-800">
+      <nav class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+        <a href="#home" class="text-xl font-bold tracking-tight">
+          <span class="text-teal-400">Hitesh</span> Karemore
+        </a>
+
+        <ul class="hidden md:flex gap-6 text-sm font-medium">
+          <li><a href="#home" class="hover:text-teal-400 transition">Home</a></li>
+          <li><a href="#about" class="hover:text-teal-400 transition">About</a></li>
+          <li><a href="#skills" class="hover:text-teal-400 transition">Skills</a></li>
+          <li><a href="#projects" class="hover:text-teal-400 transition">Projects</a></li>
+          <li><a href="#contact" class="hover:text-teal-400 transition">Contact</a></li>
+        </ul>
+
+        <!-- Simple mobile menu icon (no JS yet, just visual) -->
+        <button
+          class="md:hidden inline-flex items-center justify-center p-2 rounded-lg border border-slate-700 hover:border-teal-400"
+          aria-label="Open navigation"
+        >
+          <span class="block w-5 h-0.5 bg-slate-100 mb-1"></span>
+          <span class="block w-5 h-0.5 bg-slate-100 mb-1"></span>
+          <span class="block w-5 h-0.5 bg-slate-100"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4">
+
+      <!-- HERO SECTION -->
+      <section id="home" class="min-h-[80vh] flex flex-col md:flex-row items-center gap-10 py-16">
+        <!-- Left text -->
+        <div class="flex-1 space-y-6">
+          <p class="text-sm uppercase tracking-[0.2em] text-teal-400">
+            Web Developer • Tailwind Explorer
+          </p>
+
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Hey, I'm <span class="text-teal-400">Hitesh</span>.<br />
+            I build clean, responsive websites.
+          </h1>
+
+          <p class="text-slate-300 max-w-xl">
+            I’ve just finished learning HTML & CSS (with Tailwind). I’m now
+            building real projects to strengthen my concepts and become a
+            full-stack developer & DevOps engineer.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-lg bg-teal-500 hover:bg-teal-400 text-slate-900 shadow-lg shadow-teal-500/30 transition"
+            >
+              View My Projects
+            </a>
+            <a
+              href="#contact"
+              class="inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold rounded-lg border border-slate-600 hover:border-teal-400 hover:text-teal-300 transition"
+            >
+              Contact Me
+            </a>
+          </div>
+
+          <div class="flex items-center gap-3 text-sm text-slate-400">
+            <span>Also learning:</span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">
+              JavaScript
+            </span>
+            <span class="px-2 py-1 rounded-full bg-slate-800 border border-slate-700">
+              Git & GitHub
+            </span>
+          </div>
+        </div>
+
+        <!-- Right "profile card" -->
+        <div class="flex-1 flex justify-center">
+          <div
+            class="relative w-56 h-56 rounded-3xl bg-gradient-to-br from-teal-500 via-cyan-400 to-emerald-500 p-1 shadow-xl"
+          >
+            <div class="w-full h-full rounded-3xl bg-slate-900 flex flex-col items-center justify-center gap-3">
+              <div class="w-20 h-20 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center text-3xl">
+                👨‍💻
+              </div>
+              <p class="font-semibold text-lg">Aspiring Full-Stack Dev</p>
+              <p class="text-xs text-slate-400 px-4 text-center">
+                Currently focused on HTML, CSS, and Tailwind. Next up: JS & React.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="py-16 border-t border-slate-800">
+        <h2 class="text-2xl font-bold mb-6">About Me</h2>
+
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+          <div class="space-y-4 text-slate-300">
+            <p>
+              I am restarting my journey as a web developer, this time with a clear
+              focus and consistency. My aim is to build real-world projects that
+              help me understand core concepts deeply.
+            </p>
+            <p>
+              I enjoy breaking down complex layouts into simple components and
+              using Tailwind CSS to style them quickly. I’m also interested in
+              DevOps, deployment workflows, and building production-ready apps.
+            </p>
+            <p>
+              This portfolio is one of the first projects in my learning path and
+              will keep evolving as I add more skills and projects.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4">
+              <h3 class="font-semibold mb-2">Current Focus</h3>
+              <ul class="list-disc list-inside text-sm text-slate-300 space-y-1">
+                <li>Mastering HTML & modern CSS</li>
+                <li>Getting comfortable with Tailwind utilities</li>
+                <li>Building small but complete projects</li>
+                <li>Understanding responsive layouts</li>
+              </ul>
+            </div>
+
+            <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4">
+              <h3 class="font-semibold mb-2">Next Goals</h3>
+              <ul class="list-disc list-inside text-sm text-slate-300 space-y-1">
+                <li>Learn JavaScript deeply</li>
+                <li>Start with React & component thinking</li>
+                <li>Deploy projects on Vercel/Netlify</li>
+                <li>Explore basic DevOps (CI/CD, Docker later)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="py-16 border-t border-slate-800">
+        <h2 class="text-2xl font-bold mb-6">Skills</h2>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <!-- Skill card -->
+          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4">
+            <h3 class="font-semibold mb-1">HTML5</h3>
+            <p class="text-xs text-slate-400 mb-3">
+              Semantic tags, forms, tables, accessibility basics.
+            </p>
+            <div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+              <div class="h-full w-4/5 bg-teal-500"></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4">
+            <h3 class="font-semibold mb-1">CSS3</h3>
+            <p class="text-xs text-slate-400 mb-3">
+              Flexbox, Grid, responsive design, basic animations.
+            </p>
+            <div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+              <div class="h-full w-3/4 bg-teal-500"></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4">
+            <h3 class="font-semibold mb-1">Tailwind CSS</h3>
+            <p class="text-xs text-slate-400 mb-3">
+              Utility classes, layouts, spacing, typography, components.
+            </p>
+            <div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+              <div class="h-full w-2/3 bg-teal-500"></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4">
+            <h3 class="font-semibold mb-1">Git & GitHub</h3>
+            <p class="text-xs text-slate-400 mb-3">
+              Basic version control, commits, pushing projects.
+            </p>
+            <div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+              <div class="h-full w-1/2 bg-teal-500"></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4">
+            <h3 class="font-semibold mb-1">Responsive Design</h3>
+            <p class="text-xs text-slate-400 mb-3">
+              Building mobile-first layouts that scale up.
+            </p>
+            <div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+              <div class="h-full w-3/5 bg-teal-500"></div>
+            </div>
+          </div>
+
+          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-4">
+            <h3 class="font-semibold mb-1">Learning</h3>
+            <p class="text-xs text-slate-400 mb-3">
+              JavaScript, React, and basic DevOps in progress.
+            </p>
+            <div class="h-2 w-full bg-slate-700 rounded-full overflow-hidden">
+              <div class="h-full w-2/5 bg-teal-500"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="py-16 border-t border-slate-800">
+        <h2 class="text-2xl font-bold mb-6">Projects</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Project card 1 -->
+          <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 flex flex-col">
+            <h3 class="font-semibold mb-2">Birthday Counter</h3>
+            <p class="text-sm text-slate-300 flex-1">
+              A simple project that counts down to a birthday using HTML, CSS, and
+              JavaScript. Built to practice basic layouts and styling.
+            </p>
+            <div class="mt-3 flex gap-2 text-xs text-slate-400">
+              <span class="px-2 py-1 rounded-full bg-slate-900 border border-slate-700">HTML</span>
+              <span class="px-2 py-1 rounded-full bg-slate-900 border border-slate-700">CSS</span>
+              <span class="px-2 py-1 rounded-full bg-slate-900 border border-slate-700">JS</span>
+            </div>
+          </article>
+
+          <!-- Placeholder project 2 -->
+          <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 flex flex-col">
+            <h3 class="font-semibold mb-2">Portfolio Website (this one)</h3>
+            <p class="text-sm text-slate-300 flex-1">
+              A responsive developer portfolio built with Tailwind CSS, focusing on
+              layout, typography, and reusable components.
+            </p>
+            <div class="mt-3 flex gap-2 text-xs text-slate-400">
+              <span class="px-2 py-1 rounded-full bg-slate-900 border border-slate-700">HTML</span>
+              <span class="px-2 py-1 rounded-full bg-slate-900 border border-slate-700">Tailwind</span>
+            </div>
+          </article>
+
+          <!-- Placeholder project 3 -->
+          <article class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 flex flex-col">
+            <h3 class="font-semibold mb-2">Upcoming Project</h3>
+            <p class="text-sm text-slate-300 flex-1">
+              This slot is reserved for a future JavaScript or React project as I
+              move into more interactive web apps.
+            </p>
+            <div class="mt-3 flex gap-2 text-xs text-slate-400">
+              <span class="px-2 py-1 rounded-full bg-slate-900 border border-slate-700">Coming soon</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="py-16 border-t border-slate-800">
+        <h2 class="text-2xl font-bold mb-6">Contact</h2>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="space-y-4 text-slate-300">
+            <p>
+              If you’d like to connect, collaborate, or just say hi, feel free to
+              drop a message. I’m open to internships, beginner roles, and
+              opportunities where I can learn and contribute.
+            </p>
+            <p class="text-sm text-slate-400">
+              You can also reach me on GitHub, LinkedIn, or Instagram where I share
+              my learning journey.
+            </p>
+            <ul class="space-y-2 text-sm">
+              <li>📧 Email: <span class="text-teal-400">youremail@example.com</span></li>
+              <li>🐙 GitHub: <span class="text-teal-400">github.com/HiteshKaremore</span></li>
+            </ul>
+          </div>
+
+          <form class="bg-slate-800/60 border border-slate-700 rounded-xl p-4 space-y-4">
+            <div>
+              <label for="name" class="block text-sm mb-1">Name</label>
+              <input
+                id="name"
+                type="text"
+                class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-teal-400"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm mb-1">Email</label>
+              <input
+                id="email"
+                type="email"
+                class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-teal-400"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm mb-1">Message</label>
+              <textarea
+                id="message"
+                rows="4"
+                class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 focus:outline-none focus:border-teal-400"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full px-4 py-2.5 text-sm font-semibold rounded-lg bg-teal-500 hover:bg-teal-400 text-slate-900 shadow-lg shadow-teal-500/30 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 mt-8">
+      <div class="max-w-5xl mx-auto px-4 py-4 text-xs text-slate-500 flex flex-col md:flex-row items-center justify-between gap-2">
+        <p>&copy; <span id="year"></span> Hitesh Karemore. All rights reserved.</p>
+        <p>Built with HTML & Tailwind CSS.</p>
+      </div>
+    </footer>
+
+    <!-- Tiny JS only for year -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
