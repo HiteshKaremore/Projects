@@ -22,6 +22,13 @@ function renderHabits() {
     let habitElement = document.createElement("p");
     let capitalizedFormat = habits[i][0].toUpperCase() + habits[i].slice(1);
     habitElement.textContent = capitalizedFormat;
+    let deleteHabit = document.createElement("button");
+    deleteHabit.addEventListener("click", function () {
+      habits.splice(i, 1);
+      renderHabits();
+    });
+    deleteHabit.textContent = "Delete";
+    habitElement.append(deleteHabit);
     displayContainer.append(habitElement);
   }
 }
