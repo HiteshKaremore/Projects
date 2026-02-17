@@ -20,7 +20,8 @@ function renderHabits() {
   for (let i = 0; i < habits.length; i++) {
     console.log(habits[i]);
     let habitElement = document.createElement("p");
-    habitElement.textContent = habits[i];
+    let capitalizedFormat = habits[i][0].toUpperCase() + habits[i].slice(1);
+    habitElement.textContent = capitalizedFormat;
     displayContainer.append(habitElement);
   }
 }
