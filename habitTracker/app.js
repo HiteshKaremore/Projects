@@ -12,4 +12,15 @@ addButton.addEventListener("click", function () {
   habits.push(val);
   console.log(habits);
   inputElement.value = "";
+  renderHabits();
 });
+
+function renderHabits() {
+  displayContainer.innerHTML = "";
+  for (let i = 0; i < habits.length; i++) {
+    console.log(habits[i]);
+    let habitElement = document.createElement("p");
+    habitElement.textContent = habits[i];
+    displayContainer.append(habitElement);
+  }
+}
