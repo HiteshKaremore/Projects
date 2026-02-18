@@ -1,9 +1,11 @@
 let habits = [];
 
+//DOM Reference
 let inputElement = document.getElementById("input-habit");
 let addButton = document.getElementById("add-habit");
 let displayContainer = document.getElementById("habit-display");
 
+//ADD HABIT
 addButton.addEventListener("click", function () {
   let val = inputElement.value.trim();
   if (val === "") {
@@ -15,6 +17,7 @@ addButton.addEventListener("click", function () {
   renderHabits();
 });
 
+//Render and Delete Habit
 function renderHabits() {
   displayContainer.innerHTML = "";
   for (let i = 0; i < habits.length; i++) {
