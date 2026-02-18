@@ -11,7 +11,7 @@ addButton.addEventListener("click", function () {
   if (val === "") {
     return;
   }
-  habits.push(val);
+  habits.push({ text: val, completed: false });
   console.log(habits);
   inputElement.value = "";
   renderHabits();
@@ -23,7 +23,8 @@ function renderHabits() {
   for (let i = 0; i < habits.length; i++) {
     console.log(habits[i]);
     let habitElement = document.createElement("p");
-    let capitalizedFormat = habits[i][0].toUpperCase() + habits[i].slice(1);
+    let capitalizedFormat =
+      habits[i].text[0].toUpperCase() + habits[i].text.slice(1);
     habitElement.textContent = capitalizedFormat;
     let deleteHabit = document.createElement("button");
     deleteHabit.addEventListener("click", function () {
