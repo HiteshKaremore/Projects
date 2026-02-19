@@ -26,6 +26,9 @@ function renderHabits() {
     let capitalizedFormat =
       habits[i].text[0].toUpperCase() + habits[i].text.slice(1);
     habitElement.textContent = capitalizedFormat;
+    if (habits[i].completed) {
+      habitElement.style.textDecoration = "line-through";
+    }
 
     //Complete Button
     let completeHabit = document.createElement("button");
