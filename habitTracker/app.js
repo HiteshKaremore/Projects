@@ -26,6 +26,17 @@ function renderHabits() {
     let capitalizedFormat =
       habits[i].text[0].toUpperCase() + habits[i].text.slice(1);
     habitElement.textContent = capitalizedFormat;
+
+    //Complete Button
+    let completeHabit = document.createElement("button");
+    completeHabit.addEventListener("click", function () {
+      habits[i].completed = !habits[i].completed;
+      renderHabits();
+    });
+    completeHabit.textContent = "Complete";
+    habitElement.append(completeHabit);
+
+    //Delete button
     let deleteHabit = document.createElement("button");
     deleteHabit.addEventListener("click", function () {
       habits.splice(i, 1);
