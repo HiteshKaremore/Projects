@@ -6,7 +6,7 @@ let addButton = document.getElementById("add-habit");
 let displayContainer = document.getElementById("habit-display");
 
 //ADD HABIT
-addButton.addEventListener("click", function () {
+function addHabit() {
   let val = inputElement.value.trim();
   if (val === "") {
     return;
@@ -15,6 +15,12 @@ addButton.addEventListener("click", function () {
   console.log(habits);
   inputElement.value = "";
   renderHabits();
+}
+addButton.addEventListener("click", addHabit);
+inputElement.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    addHabit();
+  }
 });
 
 //Render and Delete Habit
