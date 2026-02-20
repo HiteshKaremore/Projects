@@ -36,7 +36,11 @@ function renderHabits() {
       habits[i].completed = !habits[i].completed;
       renderHabits();
     });
-    completeHabit.textContent = "Complete";
+    if (habits[i].completed) {
+      completeHabit.textContent = "Undo";
+    } else {
+      completeHabit.textContent = "Complete";
+    }
     habitElement.append(completeHabit);
 
     //Delete button
