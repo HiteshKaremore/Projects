@@ -57,6 +57,15 @@ function renderHabits() {
     });
     deleteHabit.textContent = "Delete";
     habitElement.append(deleteHabit);
-    displayContainer.append(habitElement);
+    displayContainer.append(habitElement); 
   }
 }
+
+//Category Icon
+const categoryIcons = {
+  Fitness: "🏋️",
+  Learning: "📚",
+  Productivity: "⚡",
+  Health: "💊",
+  Other: "📌",
+};
