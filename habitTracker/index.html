@@ -4,30 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h2>Habit Tracker</h2>
-    <div class="input-field">
-      <label for="input-habit">Enter Habit!</label>
-      <input id="input-habit" type="text" />
-      <select id="habit-category">
-        <option value="Fitness">Fitness</option>
-        <option value="Learning">Learning</option>
-        <option value="Productivity">Productivity</option>
-        <option value="Health">Health</option>
-        <option value="Other">Other</option>
-      </select>
-      <label for="start-date">Start Date</label>
-      <input id="start-date" type="date" />
-      <label for="end-date">End Date</label>
-      <input id="end-date" type="date" />
-      <label for="start-time">Start Time</label>
-      <input id="start-time" type="time" />
-      <label for="end-time">End Time</label>
-      <input id="end-time" type="time" />
-      <button id="add-habit" type="submit">Add Habit!</button>
+    <div class="app-container">
+      <h2>Habit Tracker</h2>
+
+      <div class="input-field">
+        <div class="form-group">
+          <label for="input-habit">Habit Name</label>
+          <input id="input-habit" type="text" placeholder="Enter habit..." />
+        </div>
+
+        <div class="form-group">
+          <label for="habit-category">Category</label>
+          <select id="habit-category">
+            <option value="Fitness">Fitness</option>
+            <option value="Learning">Learning</option>
+            <option value="Productivity">Productivity</option>
+            <option value="Health">Health</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="start-date">Start Date</label>
+          <input id="start-date" type="date" />
+        </div>
+
+        <div class="form-group">
+          <label for="end-date">End Date</label>
+          <input id="end-date" type="date" />
+        </div>
+
+        <div class="form-group">
+          <label for="start-time">Start Time</label>
+          <input id="start-time" type="time" />
+        </div>
+
+        <div class="form-group">
+          <label for="end-time">End Time</label>
+          <input id="end-time" type="time" />
+        </div>
+
+        <div class="form-group full-width">
+          <button id="add-habit">Add Habit</button>
+        </div>
+      </div>
+
+      <div id="habit-display"></div>
     </div>
-    <div id="habit-display"></div>
 
     <script src="app.js"></script>
   </body>

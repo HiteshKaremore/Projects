@@ -55,7 +55,8 @@ function renderHabits() {
   displayContainer.innerHTML = "";
   for (let i = 0; i < habits.length; i++) {
     console.log(habits[i]);
-    let habitElement = document.createElement("p");
+    let habitElement = document.createElement("div");
+    habitElement.classList.add("habit-item");
     let capitalizedFormat =
       habits[i].text[0].toUpperCase() + habits[i].text.slice(1);
     habitElement.textContent =
