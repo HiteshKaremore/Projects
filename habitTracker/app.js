@@ -1,17 +1,27 @@
 let habits = [];
+//Category Icon
+const categoryIcons = {
+  Fitness: "🏋️",
+  Learning: "📚",
+  Productivity: "⚡",
+  Health: "💊",
+  Other: "📌",
+};
 
 //DOM Reference
 let inputElement = document.getElementById("input-habit");
 let addButton = document.getElementById("add-habit");
 let displayContainer = document.getElementById("habit-display");
+let habitCategory = document.getElementById("habit-category");
 
 //ADD HABIT
 function addHabit() {
   let val = inputElement.value.trim();
+  let selectedCategory = habitCategory.value;
   if (val === "") {
     return;
   }
-  habits.push({ text: val, completed: false });
+  habits.push({ text: val, completed: false, category: selectedCategory });
   console.log(habits);
   inputElement.value = "";
   renderHabits();
@@ -31,7 +41,8 @@ function renderHabits() {
     let habitElement = document.createElement("p");
     let capitalizedFormat =
       habits[i].text[0].toUpperCase() + habits[i].text.slice(1);
-    habitElement.textContent = capitalizedFormat;
+    habitElement.textContent =
+      categoryIcons[habits[i].category] + " " + capitalizedFormat;
     if (habits[i].completed) {
       habitElement.style.textDecoration = "line-through";
     }
@@ -57,15 +68,6 @@ function renderHabits() {
     });
     deleteHabit.textContent = "Delete";
     habitElement.append(deleteHabit);
-    displayContainer.append(habitElement); 
+    displayContainer.append(habitElement);
   }
 }
-
-//Category Icon
-const categoryIcons = {
-  Fitness: "🏋️",
-  Learning: "📚",
-  Productivity: "⚡",
-  Health: "💊",
-  Other: "📌",
-};
